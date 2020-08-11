@@ -1,4 +1,4 @@
-abstract class View<T> {
+export abstract class View<T> {
     protected _element: JQuery;
 
     constructor(selector: string) {

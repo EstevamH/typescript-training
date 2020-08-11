@@ -5,7 +5,8 @@
     "noEmitOnError": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "removeComments": true
+    "removeComments": true,
+    "module": "system"
   },
   "include": [
     "app/ts/**/*"

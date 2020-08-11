@@ -1,4 +1,6 @@
-class NegotiationsList {
+import { Negotiation } from "./Negotiation";
+
+export class NegotiationsList {
     private _negotiations: Negotiation[] = []
 
     addToList(negotiation: Negotiation): void {
