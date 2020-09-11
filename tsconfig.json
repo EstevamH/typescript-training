@@ -6,7 +6,9 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "removeComments": true,
-    "module": "system"
+    "module": "system",
+    "strictNullChecks": true,
+    "experimentalDecorators": true
   },
   "include": [
     "app/ts/**/*"

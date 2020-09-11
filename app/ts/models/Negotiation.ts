@@ -1,22 +1,14 @@
 export class Negotiation {
 
-    constructor(private _date: Date,
-        private _quantity: number,
-        private _value: number) { }
-
-    get date() {
-        return this._date;
-    }
-
-    get quantity() {
-        return this._quantity;
-    }
-
-    get value() {
-        return this._value
-    }
+    constructor(readonly date: Date, readonly quantity: number, readonly value: number) { }
 
     get volume() {
-        return this._quantity * this._value;
+        return this.quantity * this.value;
+    }
+
+    equals(negotiation: Negotiation): boolean {
+        return this.date.getDate() == negotiation.date.getDate()
+            && this.date.getMonth() == negotiation.date.getMonth()
+            && this.date.getFullYear() == negotiation.date.getFullYear()
     }
 }

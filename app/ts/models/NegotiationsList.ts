@@ -7,5 +7,9 @@ export class NegotiationsList {
         this._negotiations.push(negotiation);
     }
 
-    getList = (): Negotiation[] => [].concat(this._negotiations);
+    getList = (): Negotiation[] => ([] as Negotiation[]).concat(this._negotiations);
+
+    equals(negotiations: NegotiationsList): boolean {
+        return JSON.stringify(this._negotiations) == JSON.stringify(negotiations.getList());
+    }
 }
